@@ -8,8 +8,14 @@ const Posts = (props) => {
 
   return (
     <div className='posts-container-wrapper'>
-      {/* Map through the posts array returning a Post component at each iteration */}
-      {/* Check the implementation of Post to see what props it requires! */}
+      {/* DONE Map through the posts array returning a Post component at each iteration */}
+      {/* DONE Check the implementation of Post to see what props it requires! */}
+      {/* {posts.map(e => { */}
+        {/* Post(e); */}
+      {/* })} */}
+      {posts.map((post, index) => {
+        return <Post key={index} likePost={likePost} post={post} />
+      })}
     </div>
   );
 };
