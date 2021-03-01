@@ -13,8 +13,8 @@ const Posts = (props) => {
       {/* {posts.map(e => { */}
         {/* Post(e); */}
       {/* })} */}
-      {posts.map((post, index) => {
-        return <Post key={index} likePost={likePost} post={post} />
+      {posts.map((e, index) => {
+        return <Post key={index} likePost={likePost} post={e} />
       })}
     </div>
   );
